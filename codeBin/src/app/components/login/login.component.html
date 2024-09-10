@@ -1,0 +1,11 @@
+<form [formGroup]="loginForm">
+    <h4>Please Login</h4>
+    <input type="email" placeholder="Enter your email" [formControl]="email">
+    <h5 [hidden]="email.valid || email.untouched">Enter correct Email</h5>
+    <input type="password" placeholder="Enter your password" [formControl]="password">
+    <h5 [hidden]="password.valid || password.untouched">password length should be greater than 5</h5>
+    <div class="button-container">
+        <button [disabled]="loginForm.invalid" (click)="login()">Login</button>
+        <button (click)="reset()">Reset</button>
+    </div>
+</form>

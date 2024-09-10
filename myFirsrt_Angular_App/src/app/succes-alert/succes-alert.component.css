@@ -1,0 +1,9 @@
+p{
+    padding: auto;
+    color: green;
+    background-color: rgba(95, 244, 145, 0.675);
+    font-size: larger;
+    height: 5vh;
+    border: 2px solid green;
+    text-align: center;
+}
