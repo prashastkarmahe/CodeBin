@@ -1,0 +1,72 @@
+/* Container styling */
+div {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* List styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Snippet item styling */
+ul li {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background-color 0.35s ease;
+}
+ul li a:hover {
+    color: #777;
+    background-color : #7ce7f5c6;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Snippet link styling */
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for snippets */
+ul li:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+ul li a:hover {
+    color: #0056b3;
+    transition: ease-in 3000;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    div {
+        padding: 15px;
+        margin: 10px;
+    }
+
+    ul li {
+        padding: 8px;
+    }
+
+    ul li a {
+        font-size: 1em;
+    }
+}

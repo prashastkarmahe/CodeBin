@@ -1,0 +1,78 @@
+/* General reset and styling */
+body, h2, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: Arial, sans-serif;
+}
+
+div {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Logo */
+nav h2 {
+    color: white;
+    font-size: 24px;
+}
+
+nav h2 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation items */
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border-radius: 4px;
+    color: #bb1414;
+}
+
+/* Logout button styling */
+nav ul li button {
+    color: white;
+    font-size: 18px;
+    padding: 2px 2px;
+    background-color: #a81b1b;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #ff4d4d;
+}
+
+/* Horizontal rule */
+hr {
+    border: 1px solid #333;
+    margin: 20px 0;
+}
